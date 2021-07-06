@@ -70,7 +70,7 @@ let arr = [5, 3, 8, 1];
 function filterRangeInPlace(array, min, max){
 
 	for(let i = 0; i < array.length; i++){
-		if(array[i] <= min || array[i] >= max){
+		if(max <= array[i] <= min){
 			array.splice(i, 1);
 		}
 	}
